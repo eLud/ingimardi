@@ -13,6 +13,7 @@
 		3362F3311DAD6D8400F4D29E /* TooDoooooooes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3362F32F1DAD6D8400F4D29E /* TooDoooooooes.xcdatamodeld */; };
 		3362F3331DAD6D8400F4D29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3362F3321DAD6D8400F4D29E /* Assets.xcassets */; };
 		3362F3361DAD6D8400F4D29E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3362F3341DAD6D8400F4D29E /* LaunchScreen.storyboard */; };
+		3362F33E1DAD6EAE00F4D29E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3362F33D1DAD6EAE00F4D29E /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3362F3321DAD6D8400F4D29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3362F3351DAD6D8400F4D29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3362F3371DAD6D8400F4D29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3362F33D1DAD6EAE00F4D29E /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				3362F3281DAD6D8400F4D29E /* AppDelegate.swift */,
 				3362F32A1DAD6D8400F4D29E /* ViewController.swift */,
+				3362F33D1DAD6EAE00F4D29E /* Task.swift */,
 				3362F32C1DAD6D8400F4D29E /* Main.storyboard */,
 				3362F3321DAD6D8400F4D29E /* Assets.xcassets */,
 				3362F3341DAD6D8400F4D29E /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3362F33E1DAD6EAE00F4D29E /* Task.swift in Sources */,
 				3362F32B1DAD6D8400F4D29E /* ViewController.swift in Sources */,
 				3362F3291DAD6D8400F4D29E /* AppDelegate.swift in Sources */,
 				3362F3311DAD6D8400F4D29E /* TooDoooooooes.xcdatamodeld in Sources */,
@@ -306,6 +310,7 @@
 				3362F33C1DAD6D8400F4D29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
