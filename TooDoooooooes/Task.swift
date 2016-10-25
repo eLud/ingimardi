@@ -28,4 +28,13 @@ struct Task {
     var priority: Priority = Priority.normal
     let type: TaskType
     var imageURL: URL?
+
+    init(name: String, description: String, dueDate: Date, priority: Priority, type: TaskType, imageURL: URL? = nil) {
+        self.name = name
+        self.description = description
+        self.dueDate = dueDate
+        self.priority = priority
+        self.type = type
+        self.imageURL = imageURL
+    }
 }

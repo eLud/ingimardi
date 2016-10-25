@@ -150,7 +150,7 @@
                         <outlet property="descriptionTextView" destination="yX7-hg-XxP" id="Rfr-lD-EOS"/>
                         <outlet property="isPersoSwitch" destination="iTf-nI-9GW" id="cim-6x-uID"/>
                         <outlet property="nameTextField" destination="Yzr-lL-DtX" id="REk-FN-HUg"/>
-                        <outlet property="prioritySegmentedControl" destination="CZW-qL-ebe" id="ofg-Bw-H8a"/>
+                        <outlet property="prioritySegmentedControl" destination="CZW-qL-ebe" id="Cu2-LO-euE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
