@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Task {
+struct Task: CustomStringConvertible {
 
     enum Priority: Int {
         case low = 0

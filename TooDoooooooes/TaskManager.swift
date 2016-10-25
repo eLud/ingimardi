@@ -38,5 +38,6 @@ class TaskManager {
 
     func add(_ task: Task) {
         tasks.append(task)
+        print("J'ai ajouté \(task)")
     }
 }
