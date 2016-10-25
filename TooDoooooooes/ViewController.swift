@@ -18,12 +18,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var isPersoSwitch: UISwitch!
 
     let picker = UIDatePicker()
+    let dateFormatter = DateFormatter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
 
         picker.addTarget(self, action: #selector(datePickerUpdated), for: .valueChanged)
         picker.datePickerMode = .date
+        picker.minimumDate = Date()
+
         dateTextField.inputView = picker
     }
 
@@ -33,9 +37,6 @@ class ViewController: UIViewController {
     }
 
     func datePickerUpdated() {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy"
-
         dateTextField.text = dateFormatter.string(from: picker.date)
     }
 
