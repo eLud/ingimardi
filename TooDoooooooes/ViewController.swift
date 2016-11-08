@@ -7,6 +7,7 @@
 //
 
 import UIKit
+//import MessageUI
 
 class ViewController: UIViewController {
 
@@ -58,6 +59,10 @@ class ViewController: UIViewController {
 
 
         let photoController = UIImagePickerController()
+
+//        let messageController = MFMessageComposeViewController()
+//        messageController.body = "Hello"
+//        messageController.recipients = ["toto@test.com"]
 
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             photoController.sourceType = .camera
