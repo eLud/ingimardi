@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>I need photo access to spy on you</string>
+	<key>NSCameraUsageDescription</key>
+	<string>I need photo access to spy on you</string>
 </dict>
 </plist>

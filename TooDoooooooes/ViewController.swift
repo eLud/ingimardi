@@ -16,9 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var prioritySegmentedControl: UISegmentedControl!
     @IBOutlet weak var isPersoSwitch: UISwitch!
+    @IBOutlet weak var taskImageView: UIImageView!
 
     let picker = UIDatePicker()
-    let dateFormatter = DateFormatter()
+    lazy var dateFormatter = DateFormatter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,11 +56,40 @@ class ViewController: UIViewController {
 
     @IBAction func toggleVisibility(_ sender: UIButton) {
 
-        UIView.animate(withDuration: 4) {
-        self.buttonToHide.isHidden = !self.buttonToHide.isHidden
-            sender.backgroundColor = UIColor.red
+
+        let photoController = UIImagePickerController()
+
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            photoController.sourceType = .camera
+        } else if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            photoController.sourceType = .photoLibrary
+        } else {
+            fatalError()
         }
+
+        photoController.delegate = self
+        present(photoController, animated: true, completion: nil)
+
+//        UIView.animate(withDuration: 4) {
+//        self.buttonToHide.isHidden = !self.buttonToHide.isHidden
+//            sender.backgroundColor = UIColor.red
+//        }
+    }
+}
+
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
     }
 
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            taskImageView.image = image
+        }
+        dismiss(animated: true, completion: nil)
+        print(info)
+    }
 }
 
