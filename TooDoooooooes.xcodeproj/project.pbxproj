@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331A86191DD26D21002EF216 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A86181DD26D21002EF216 /* ListTableViewController.swift */; };
 		3362F3291DAD6D8400F4D29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3362F3281DAD6D8400F4D29E /* AppDelegate.swift */; };
 		3362F32B1DAD6D8400F4D29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3362F32A1DAD6D8400F4D29E /* ViewController.swift */; };
 		3362F32E1DAD6D8400F4D29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3362F32C1DAD6D8400F4D29E /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331A86181DD26D21002EF216 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		3362F3251DAD6D8400F4D29E /* TooDoooooooes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TooDoooooooes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3362F3281DAD6D8400F4D29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3362F32A1DAD6D8400F4D29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				3362F32A1DAD6D8400F4D29E /* ViewController.swift */,
 				3362F33D1DAD6EAE00F4D29E /* Task.swift */,
 				3362F33F1DAD732C00F4D29E /* TaskManager.swift */,
+				331A86181DD26D21002EF216 /* ListTableViewController.swift */,
 				3362F32C1DAD6D8400F4D29E /* Main.storyboard */,
 				3362F3321DAD6D8400F4D29E /* Assets.xcassets */,
 				3362F3341DAD6D8400F4D29E /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				3362F33E1DAD6EAE00F4D29E /* Task.swift in Sources */,
 				3362F32B1DAD6D8400F4D29E /* ViewController.swift in Sources */,
 				3362F3401DAD732C00F4D29E /* TaskManager.swift in Sources */,
+				331A86191DD26D21002EF216 /* ListTableViewController.swift in Sources */,
 				3362F3291DAD6D8400F4D29E /* AppDelegate.swift in Sources */,
 				3362F3311DAD6D8400F4D29E /* TooDoooooooes.xcdatamodeld in Sources */,
 			);

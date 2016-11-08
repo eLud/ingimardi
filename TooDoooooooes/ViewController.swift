@@ -53,6 +53,7 @@ class ViewController: UIViewController {
 
         let task = Task(name: name, description: desc, dueDate: picker.date, priority: priority, type: type)
         TaskManager.instance.add(task)
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func toggleVisibility(_ sender: UIButton) {
